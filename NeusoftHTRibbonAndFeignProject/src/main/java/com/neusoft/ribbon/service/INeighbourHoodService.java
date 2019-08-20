@@ -2,6 +2,7 @@ package com.neusoft.ribbon.service;
 
 import java.util.List;
 
+import com.neusoft.ribbon.message.ResultMessage;
 import com.neusoft.ribbon.model.NeighbourHoodModel;
 
 /**模块：供热缴费管理
@@ -12,7 +13,7 @@ import com.neusoft.ribbon.model.NeighbourHoodModel;
 public interface INeighbourHoodService {
 	
 	//取得所有小区
-	public List<NeighbourHoodModel> getListByAll() throws Exception;
+	public ResultMessage<NeighbourHoodModel> getListByAll() throws Exception;
 	
 	
 
