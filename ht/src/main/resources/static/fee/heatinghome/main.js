@@ -69,7 +69,7 @@ $(function(){
 	});
 
 	//取得小区列表，填充小区下拉框
-	$.getJSON(host+"fee/neighbourhood/list/all",function(neighbourhoodList){
+	$.getJSON(gateway+"fee/neighbourhood/list/all",function(neighbourhoodList){
 		if(neighbourhoodList){
 			$.each(neighbourhoodList,function(index,neighbourhood){
 				$("select#NeighbourHoodSelection").append("<option value='"+neighbourhood.hoodno+"'>"+neighbourhood.hoodname+"</option>");

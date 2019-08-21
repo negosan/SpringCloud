@@ -28,12 +28,7 @@ public class NeighbourHoodController {
 	@Autowired
 	private INeighbourHoodService neighbourHoodService = null;
 	
-	//@Autowired
-	//private RestTemplate rest = null;
-	
-	//@Value("${feeservice.value}")
-	//private String url=null;
-	
+
 	//增加小区
 	@PostMapping("/add")
 	public ResultMessage<NeighbourHoodModel> add(NeighbourHoodModel neighbourHoodModel) throws Exception {
@@ -74,11 +69,4 @@ public class NeighbourHoodController {
 		return result;
 	}
 	
-	//取得所有小区列表，无分页
-	@GetMapping(value="/list/all")
-	public List<NeighbourHoodModel> getListByAll() throws Exception{
-		//System.out.println(url);
-		//List<NeighbourHoodModel> List=rest.getForObject(url+"/list/all", List.class) ;
-		return neighbourHoodService.getListByAll();
-	}
 }

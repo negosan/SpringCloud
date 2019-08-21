@@ -5,7 +5,7 @@
  */
 $.jgrid.defaults.styleUI = 'Bootstrap';
 var host="http://localhost:8080/";
-var feehost="http://localhost:8100/";
+var gateway="http://localhost:8888/neusofthtservice/";
 $(function(){
 	
 	//点击左面功能菜单处理
